@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      SP meet.com
+    </title>
+    <style type="text/css">
+      *{
+        padding:0;
+        margin:0;
+      }
+      header>h1{
+        position:absolute;
+        top:4%;
+        left:5%;
+        font-size:27px;
+        text-align:center;
+        color: red;
+        -webkit-text-stroke:1px white;
+      }
+      .details{
+        color:white;
+        background-color:red;
+        position:absolute;
+        top:130px;
+        width:97%;
+        border-color:red;
+        border-radius:15px 15px 0px 0px;
+        font-size:20px;
+        font-weight:50px;
+        padding:5px;
+      }
+      form{
+        padding:25px;
+        margin:10px;
+        font-size:20px;
+      }
+      .submit{
+        height:35px;
+        width:100%;;
+        font-size:20px;
+        font-weight:600;
+        background-color:#2093c3;
+        color:white;
+      }
+      .footer{
+        padding:15px;
+        text-align:center;
+        background:red;
+        border-radius:0px 0px 25px 25px ;
+        font-weight:700;
+        height:35px;
+        color:white;
+        font-size:17px;
+        
+        
+      }
+      #input{
+        width:90%;
+        height:10%;
+        padding:10px;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+       <img src="Background.jpg" height="170px;" width="100%"> 
+      <h1> Book Free<br>Online Consultation!!
+      </h1>
+    </header>
+    <div>
+      <h1 class="details">
+       &nbsp; &nbsp;
+        Enter Your Details!
+      </h1>
+    </div>
+    <form action="mailto:jangirsandeep9029@gmail.com" >
+      <div>
+        <label style="font-weight:500;" for="name" >Name:- </label> <br>
+        <input name="Name" id="input" required type="text" placeholder="Enter Your Name">
+      </div>
+      <br> <br>
+      <div>
+        <label  style="font-weight:500" for="profession" >Profession:-</label><br>
+        <input name="Profession" id="input" required type="text"  placeholder="Eg: Student,Police, etc.">
+      </div>
+      <br> <br>
+      <div>
+        <label style="font-weight:500;" for="gmail">Gmail:-</label><br>
+        <input name="Gmail" id="input" required type="gmail" placeholder="Enter your email address">
+      </div>
+      <br> <br> 
+      <div>
+        <label for="why"  style="font-weight:500;" >Why?:- </label> <br>
+        <textarea name="why" id="input" required type="text" rows="7" cols="23" placeholder="Why you want to consult us?"></textarea>
+      </div>
+      <br> <br>
+      <div class="inline">
+        <div>
+          <p style="font-size:14px;  font-weight:500;">
+           <input type="checkbox" required><br>
+           I hearby agree to receive mail from your brand.
+          </p>
+        </div>
+        <br>
+        <p align="justify" style="font-size:12px; font-weight:500;"> By Clicking on the submit button, You agree to our <a
+         href="terms.html" style="text-decoration:none">Terms & Condition.</a>
+        </p>
+        <br>
+        
+      
+        <button type="submit" class="submit">
+        Submit
+        </button>
+       
+     </div>
+    </form>
+    <div class="footer">
+      <p>You will be receiving mail from us very soon! </p>
+    </div>
+  </body>
+</html>
+
