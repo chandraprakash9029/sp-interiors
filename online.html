@@ -11,25 +11,27 @@
         padding:0;
         margin:0;
       }
-      header>h1{
-        position:absolute;
-        top:4%;
-        left:5%;
+      header{
+        display: flex;
+        flex-direction: column;
         font-size:27px;
-        text-align:center;
+        vertical-align: center;
+      }  
+      header > h1{
+        flex-grow: 3;
         color: red;
+        align-self: center;
         -webkit-text-stroke:1px white;
       }
       .details{
+        align-self: flex-start;
         color:white;
         background-color:red;
-        position:absolute;
-        top:130px;
-        width:97%;
+        width:100%;
         border-color:red;
         border-radius:15px 15px 0px 0px;
-        font-size:20px;
-        font-weight:50px;
+        font-size:25px;
+        font-weight:600;
         padding:5px;
       }
       form{
@@ -63,6 +65,11 @@
         padding:10px;
       }
       
+      @media screen and (min-width: 700px){
+        form{
+          display: flex;
+        }
+      }
       
     </style>
   </head>
@@ -70,14 +77,15 @@
     <header>
        <img src="Background.jpg" height="170px;" width="100%"> 
       <h1> Book Free<br>Online Consultation!!
-      </h1>
-    </header>
+    
+    
     <div>
-      <h1 class="details">
+      <h2 class="details">
        &nbsp; &nbsp;
         Enter Your Details!
-      </h1>
+      </h2>
     </div>
+    </header>    
     <form action="mailto:jangirsandeep9029@gmail.com" >
       <div>
         <label style="font-weight:500;" for="name" >Name:- </label> <br>
