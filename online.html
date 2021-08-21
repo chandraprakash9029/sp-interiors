@@ -1,158 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      SP meet.com
-    </title>
-    <style type="text/css">
-      *{
-        padding:0;
-        margin:0;
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>
+    contact us
+  </title>
+
+  <style type="text/css">
+    .inputs {
+      width: 100%;
+      padding: 0.6rem 0;
+
+    }
+    .contact-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      padding:0.5 2rem;
+      padding-top: 1rem;
+      margin:0 0.8rem;
+    }
+    @media screen and (min-width:720px){
+      .contact-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding:0.5 2rem;
+        padding-top: 1rem;
+        margin:0 4rem;
       }
-      header{
-         height:100%;
-        display: flex;
-        flex-direction: column;
-        font-size:27px;
-        vertical-align: center;
-        height:170px;
-        background: url("Background.jpg")
-      }  
-      header > h1{
-        width:100%;
-        color: red;
-        align-self: center;
-        -webkit-text-stroke:1px white;
+      .inline{
+        margin:0 4rem;
       }
-      .details{
-        align-self: flex-start;
-        color:white;
-        background-color:red;
-        width:100%;
-        border-color:red;
-        border-radius:15px 15px 0px 0px;
-        font-size:25px;
-        font-weight:600;
-        padding:0px;
+    }
+    @media screen and (min-width:960px){
+      .contact-grid,.inline{
+        margin:0 7rem;
       }
-      #insidehead{
-        height:100%;
-        width: auto;
-      }
-      form{
-        padding:25px;
-        margin:10px;
-        font-size:20px;
-      }
-      .submit{
-        height:35px;
-        width:100%;;
-        font-size:20px;
-        font-weight:600;
-        background-color:#2093c3;
-        color:white;
-      }
-      .footer{
-        padding:15px;
-        text-align:center;
-        background:red;
-        border-radius:0px 0px 25px 25px ;
-        font-weight:700;
-        height:35px;
-        color:white;
-        font-size:17px;
-        
-        
-      }
-      #input{
-        width:90%;
-        height:10%;
-        padding:10px;
-      }
-      
-      @media screen and (min-width: 700px){
-        .form{
-          display: flex;
-        }
-        header{
-          width:auto;
-        }
-        #last{
-          font-size:25px;
-        }
-      
-      }
-      @media screen and (max-width:515px){ 
-        header> h1 {
-          font-size: 35px;
-        }
-      }
-      
-    </style>
-  </head>
-  <body>
-    <header background="Background.jpg">
-      <div id="insidehead"> 
-      <h1> Book Free<br>Online Consultation!!  </h1>
-    
-    
-    <div>
-      <h2 class="details">
-       &nbsp; &nbsp;
-        Enter Your Details!
-      </h2>
-    </div>
-      </div>    
-    </header>    
-    <form action="mailto:jangirsandeep9029@gmail.com" >
-      <div class="form">
-      <div>
-        <label style="font-weight:500;" for="name" >Name:- </label> <br>
-        <input name="Name" id="input" required type="text" placeholder="Enter Your Name">
+    }
+
+  </style>
+</head>
+
+<body name="contact">
+  <form>
+    <fieldset>
+      <legend> <b>Enter Your Details </b></legend>
+      <div class="contact-grid"><div>
+        <label for="name" style="font-weight:500;">Name: </label><br>
+        <input class="inputs" type="text" id="name" rows="1" cols="10" required placeholder="Enter Your Full Name"> <br> <br>
       </div>
-      <br> <br>
       <div>
-        <label  style="font-weight:500" for="profession" >Profession:-</label><br>
-        <input name="Profession" id="input" required type="text"  placeholder="Eg: Student,Police, etc.">
+        <label for="profession" style="font-weight:500;"> Profession: </label><br>
+        <input class="inputs" required type="text" id="profession" placeholder="Eg:-Student,Developer,etc"><br><br>
       </div>
-      <br> <br>
       <div>
-        <label style="font-weight:500;" for="gmail">Gmail:-</label><br>
-        <input name="Gmail" id="input" required type="gmail" placeholder="Enter your email address">
+        <label for="gmail" style="font-weight:500;">Gmail: </label><br>
+        <input class="inputs" required type="email" id="gmail" placeholder="Enter Your Gmail Here"><br><br>
       </div>
-      <br> <br> 
       <div>
-        <label for="why"  style="font-weight:500;" >Why?:- </label> <br>
-        <textarea name="why" id="input" required type="text" rows="7" cols="23" placeholder="Why you want to consult us?"></textarea>
-      </div>
-      </div>  
-        <div id="last">
-          <br> <br>
+        <label for="message" style="font-weight:500;"> Message:</label><br>
+        <textarea class="inputs" required rows="8" cols="22" placeholder="Why You want to reach us?"></textarea><br><br>
+      </div></div>
       <div class="inline">
         <div>
           <p style="font-size:14px;  font-weight:500;">
-           <input type="checkbox" required><br>
-           I hearby agree to receive mail from your brand.
+            <input type="checkbox" required><br>
+            I hearby agree to receive mail from your brand.
           </p>
         </div>
-        <br>
         <p align="justify" style="font-size:12px; font-weight:500;"> By Clicking on the submit button, You agree to our <a
-         href="terms.html" style="text-decoration:none">Terms & Condition.</a>
+            href="" style="text-decoration:none">Terms & Condition</a> and <a href="" style="text-decoration:none">Privacy
+            Policy.</a>
         </p>
-        <br>
-       </div>
-      
-        <button type="submit" class="submit">
-        Submit
-        </button>
-       
-     </div>
-    </form>
-    <div class="footer">
-      <p>You will be receiving mail from us very soon! </p>
-    </div>
-  </body>
+        <input class="submit" style="background:#2093c3;
+        width:50%; 
+        font-weight:500; 
+        border:0px; 
+        border-radius:5px; 
+        font-size:20px;
+        
+        " type="submit">
+      </div>
+</body>
+
 </html>
+
+
 
