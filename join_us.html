@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>
+    contact us
+  </title>
+
+  <style type="text/css">
+    .inputs {
+      width: 100%;
+      padding: 0.6rem 0;
+
+    }
+    .contact-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      padding:0.5 2rem;
+      padding-top: 1rem;
+      margin:0 0.8rem;
+    }
+    @media screen and (min-width:720px){
+      .contact-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding:0.5 2rem;
+        padding-top: 1rem;
+        margin:0 4rem;
+      }
+      .inline{
+        margin:0 4rem;
+      }
+    }
+    @media screen and (min-width:960px){
+      .contact-grid,.inline{
+        margin:0 7rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body name="contact">
+  <form action="successful.html">
+    <fieldset>
+      <legend> <b>Enter Your Details </b></legend>
+      <div class="contact-grid"><div>
+        <label for="name" style="font-weight:500;">Name: </label><br>
+        <input class="inputs" type="text" id="name" rows="1" cols="10" required placeholder="Enter Your Full Name"> <br> <br>
+      </div>
+      <div>
+        <label for="employment-status" style="font-weight:500;">Current Employment status: </label><br>
+        <input class="inputs" required type="text" id="profession" placeholder="Eg:-Fresher, n years of experience, etc"><br><br>
+      </div>
+      <div>
+        <label for="gmail" style="font-weight:500;">Gmail: </label><br>
+        <input class="inputs" required type="email" id="gmail" placeholder="Enter Your Gmail Here"><br><br>
+      </div>
+      <div>
+        <label for="message" style="font-weight:500;"> Message:</label><br>
+        <textarea class="inputs" required rows="8" cols="22" placeholder="Tell us little bit about your past experience in this field. And give us a Fair reason, so that we can hire you!"></textarea><br><br>
+      </div></div>
+      <div class="inline">
+        <div>
+          <p style="font-size:14px;  font-weight:500;">
+            <input type="checkbox" required><br>
+            I hearby agree to receive mail from your brand.
+          </p>
+        </div>
+        <p align="justify" style="font-size:12px; font-weight:500;"> By Clicking on the submit button, You agree to our <a
+            href="" style="text-decoration:none">Terms & Condition</a> and <a href="" style="text-decoration:none">Privacy
+            Policy.</a>
+        </p>
+        <input class="submit" style="background:#2093c3;
+        width:50%; 
+        font-weight:500; 
+        border:0px; 
+        border-radius:5px; 
+        font-size:20px;
+        
+        " type="submit">
+      </div>
+</body>
+
+</html>
+
